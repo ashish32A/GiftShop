@@ -1,0 +1,614 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+
+body {
+    background: #ADA996;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #D3CCE3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .logo {
+    font-size: 2.5rem;
+    margin-left: 5%;
+    font-weight: bolder;
+    color: #000000;
+    text-decoration: none;
+}
+
+header .navbar a {
+    font-size: 22px;
+    margin-left: 2rem;
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+header .navbar a:hover {
+    color: rgb(231, 151, 3);
+    border-bottom: 2px solid black;
+
+}
+
+#menu-bar {
+
+    cursor: pointer;
+    color: #000;
+    display: none;
+    margin-left: -22px;
+    border: 1px solid black;
+    padding: 4px;
+    border-radius: 5px;
+
+}
+
+header .icons {
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+header .icons i,
+header .icons a {
+    cursor: pointer;
+    height: 2.5rem;
+    text-align: center;
+    width: 2.5rem;
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+
+}
+
+header .icons a {
+    margin-right: 30px;
+}
+
+header .icons #menu-bars {
+    display: none;
+}
+
+
+/* Main */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+
+}
+
+.main .maintext {
+    margin-top: 144px;
+}
+
+.maintext h1 {
+    font-size: 50px;
+}
+
+.maintext .top {
+    color: rgb(231, 151, 3);
+}
+
+.maintext button {
+    height: 40px;
+    width: 120px;
+    margin-top: 24px;
+    background-color: rgb(231, 151, 3);
+    border-radius: 20px;
+    border: none;
+    font-size: 22px;
+    color: white;
+
+}
+
+.maintext p {
+    margin-top: 12px;
+}
+
+.maintext button:hover {
+    border: 3px solid rgb(231, 151, 3);
+    background-color: transparent;
+    color: black;
+}
+
+.main-img img {
+    width: 100%;
+    height: 300px;
+    margin-top: 20%;
+}
+
+
+/* cards */
+
+.trend .head h1 {
+    text-align: center;
+    padding: 33px;
+    margin-top: 4%;
+}
+
+.head span {
+    color: rgb(231, 151, 3);
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.trend .show a {
+    display: block;
+    width: 90px;
+    margin: 2% auto 1% auto;
+    text-align: center;
+   color: #ff7700;
+    cursor: pointer;
+}
+
+.card .crd {
+    width: 300px;
+    height: 450px;
+    background-color: #fff;
+    box-shadow: rgba(252, 159, 28, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    margin-inline: 11px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.crd img {
+    width: 85%;
+    padding: 24px;
+    border-radius: 30px;
+}
+.crdText{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.crdText h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-size: 17px;
+    padding: 3px;
+    color: #474747;
+    text-align: start;
+}
+
+.crdText a {
+    background-color: #ff7700;
+    border: none;
+     margin-left: 22%;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 4px 6px 4px 6px;
+    text-decoration: none;
+
+}
+
+.crdText a:hover {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: 2px solid #ff7700;
+
+}
+
+/* About us */
+.about {
+    display: none;
+
+}
+
+.about-us {
+    background-color: rgb(53, 36, 3);
+    color: white;
+    padding: 56px;
+    font-size: 19px;
+    margin-top: 4%;
+}
+
+.about .me {
+    display: flex;
+    width: 50%;
+    margin: 5% auto 5% auto;
+    background-color: #fff;
+    box-shadow: rgba(252, 159, 28, 0.35) 0px 5px 15px;
+    padding: 33px;
+
+}
+
+.about-text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about .me img {
+
+    width: 50%;
+
+}
+
+/* Contact */
+.Contact {
+    display: none;
+
+}
+
+.Contact-us {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 56px;
+    font-size: 19px;
+    margin-top: 4%;
+}
+
+.Contact-me {
+    display: flex;
+    width: 50%;
+    margin: 5% auto 5% auto;
+    background-color: #fff;
+    box-shadow: rgba(252, 159, 28, 0.35) 0px 5px 15px;
+    padding: 33px;
+}
+
+.contact-text {
+    padding: 22px;
+    width: 600px;
+
+}
+
+.contact-text p {
+    margin-top: 12px;
+}
+
+
+.Contact .form {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.form input {
+    width: 300px;
+    padding: 5px;
+    height: 27px;
+    margin-top: 11px;
+    border-radius: 5px;
+}
+
+.form button {
+    width: 250px;
+    height: 36px;
+    background-color: rgb(231, 151, 3);
+    color: white;
+    font-size: 22px;
+    border: none;
+    margin-top: 22px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: transparent;
+    color: black;
+    border: 2px solid rgb(231, 151, 3);
+}
+
+/*--------------Find Section-----------------*/
+
+.mainForm {
+    display: none;
+    height: 100vh;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+.form-1 {
+    display: block;
+    height: 70vh;
+}
+
+.form-text {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+.form-text h1 {
+    color: rgb(0, 0, 0);
+}
+
+.form-text p {
+    font-size: 18px;
+    color: rgb(136, 89, 2);
+}
+
+.formBox {
+    height: 500px;
+    margin: 20px 20vh;
+    border: 2px solid rgb(236, 233, 233);
+    border-radius: 15px;
+    opacity: 0.8;
+    background-color: #bbab94;
+}
+
+.input,
+.search-btn {
+    display: block;
+    padding: 20px 30px 0 30px;
+}
+
+.label {
+    font-size: large;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.options {
+    height: 30px;
+    width: 100%;
+    border: 2px solid #b57944;
+    border-radius: 25px;
+}
+
+.search-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.search-btn button {
+    width: 100%;
+    font-size: larger;
+    font-weight: 800;
+    color: white;
+    background-color: #ff7700;
+    padding: 10px 0;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+}
+
+.search-btn button:hover {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #ff7700;
+}
+
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+}
+
+.footer .footerText {
+    text-align: center;
+    margin-inline: 60px;
+
+}
+
+.footerText h1 {
+    padding-top: 10px;
+}
+
+.footerText p {
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.p1 {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    justify-content: center;
+    font-size: large;
+    padding: 10px;
+    padding-bottom: 20px;
+
+}
+
+/* Scroll */
+#scroll-top {
+    position: fixed;
+    top: -120%;
+    right: 1rem;
+    padding: .4rem;
+    font-size: 2rem;
+    background: rgb(232, 151, 1);
+    color: #ffffff;
+    border-radius: .5rem;
+    transition: 1s linear;
+    z-index: 1000;
+    text-decoration: none;
+
+}
+
+#scroll-top.active {
+    top: calc(100% - 8rem)
+}
+
+/* Media Query */
+@media screen and (max-width: 785px) {
+
+    .nav-list {
+        display: none;
+    }
+
+    .icons .nav-bar {
+        display: flex;
+        font-size: 25px;
+        padding-left: 12px;
+        cursor: pointer;
+
+    }
+
+
+
+
+}
+
+@media (min-width:300px) and (max-width:920px) {
+    .about .me {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px;
+
+    }
+
+    .about-text {
+        font-size: 12px;
+    }
+
+    .Contact-me {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .Contact-me iframe {
+        height: 50%;
+    }
+
+    .contact-text {
+        font-size: 12px;
+    }
+
+    .trend .head h1 {
+        margin-top: 10%;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+
+
+    .main {
+        display: flex;
+        justify-content: center;
+        text-align: start;
+    }
+
+    .maintext {
+        margin-left: 15px;
+    }
+
+    .main .maintext h1 {
+        font-size: 35px;
+    }
+
+    .maintext button {
+        height: 30px;
+        width: 120px;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
+    .main img {
+        height: auto;
+        width: 300px;
+    }
+
+    .Contact {
+        font-size: 10px;
+    }
+
+    header .logo {
+
+        margin-left: 10px;
+        font-size: 30px;
+    }
+
+    .form input {
+        width: 200px;
+    }
+}
+
+
+@media screen and (max-width:550px) {
+
+    .form-text h1 {
+        font-size: 14 px;
+    }
+
+    .form-text p {
+        font-size: 12px;
+        color: rgb(136, 89, 2);
+    }
+
+    .form input {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 772px) {
+    #menu-bar {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #f7f7f7;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a {
+        margin: 1rem;
+        padding: 0.5rem;
+        display: block;
+        border: .2rem solid rgba(0, 0, 0, .1);
+        border-left: .5rem solid rgb(255, 158, 3);
+        border-right: .5rem solid rgb(255, 158, 3);
+        background: #fff;
+    }
+
+    .mainForm {
+        margin-top: 15%;
+    }
+
+}
