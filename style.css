@@ -5,12 +5,7 @@
 }
 
 body {
-    background: #ADA996;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #e0dfdf;
 
 
 
@@ -232,7 +227,7 @@ header .icons #menu-bars {
 }
 
 .about-us {
-    background-color: rgb(53, 36, 3);
+    background-color: rgb(0, 0, 0);
     color: white;
     padding: 56px;
     font-size: 19px;
@@ -244,7 +239,7 @@ header .icons #menu-bars {
     width: 50%;
     margin: 5% auto 5% auto;
     background-color: #fff;
-    box-shadow: rgba(252, 159, 28, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 33px;
 
 }
@@ -279,7 +274,7 @@ header .icons #menu-bars {
     width: 50%;
     margin: 5% auto 5% auto;
     background-color: #fff;
-    box-shadow: rgba(252, 159, 28, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 33px;
 }
 
@@ -332,6 +327,7 @@ header .icons #menu-bars {
     height: 100vh;
     margin-top: 5%;
     justify-content: center;
+    
 }
 
 .form-1 {
@@ -356,7 +352,7 @@ header .icons #menu-bars {
 
 .formBox {
     height: 500px;
-    margin: 20px 20vh;
+    margin: 20px;
     border: 2px solid rgb(236, 233, 233);
     border-radius: 15px;
     opacity: 0.8;
@@ -426,6 +422,7 @@ header .icons #menu-bars {
 
 .footerText h1 {
     padding-top: 10px;
+    border-bottom: 2px solid black;
 }
 
 .footerText p {
@@ -433,15 +430,21 @@ header .icons #menu-bars {
     cursor: pointer;
 }
 
+.footerText p:hover{
+    color: #474747;
+    text-decoration: underline;
+}
+
 .p1 {
     display: flex;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
     justify-content: center;
+    text-align: center;
     font-size: large;
     padding: 10px;
     padding-bottom: 20px;
-
+    margin-bottom: 0;
 }
 
 /* Scroll */
@@ -559,6 +562,9 @@ header .icons #menu-bars {
     .form input {
         width: 200px;
     }
+    .form button {
+        width: 200px;
+    }
 }
 
 
@@ -573,9 +579,7 @@ header .icons #menu-bars {
         color: rgb(136, 89, 2);
     }
 
-    .form input {
-        width: 250px;
-    }
+   
 }
 
 @media screen and (max-width: 772px) {
@@ -602,8 +606,8 @@ header .icons #menu-bars {
         padding: 0.5rem;
         display: block;
         border: .2rem solid rgba(0, 0, 0, .1);
-        border-left: .5rem solid rgb(255, 158, 3);
-        border-right: .5rem solid rgb(255, 158, 3);
+        border-left: .2rem solid rgb(255, 158, 3);
+        border-right: .2rem solid rgb(255, 158, 3);
         background: #fff;
     }
 
